@@ -21,12 +21,12 @@ after division by five we seeing "Buzz"
 /*Task - 2.1
 If we have 0 after division by three and five we seeing "FizzBuzz"
 ------------------------*/
-for (var cur = 1; cur < 100; cur ++ ){
-	if (cur % 3 == 0&&cur % 5 == 0 )
-		console.log("FizzBuzz");
-	else 
-		console.log(cur);
-};
+// for (var cur = 1; cur < 100; cur ++ ){
+// 	if (cur % 3 == 0&&cur % 5 == 0 )
+// 		console.log("FizzBuzz");
+// 	else 
+// 		console.log(cur);
+// };
 
 
 /*Task - 3 (Chess)
