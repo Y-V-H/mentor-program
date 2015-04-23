@@ -7,6 +7,7 @@
 // 		return f2;
 // 	else
 // 		return f1;
+
 // };
 
 // console.log(min(10, 0));
@@ -30,17 +31,44 @@
 
  
 
-var countChar = function (){
-	var expression = (prompt('Введите выражение на английском языке?', "")); 
-	var character = (prompt('Что искать?', ""));
-	var count = 0;
-	var expressionLength = expression.length;
+// var countChar = function (){
+// 	var expression = (prompt('Введите выражение на английском языке?', "")), 
+// 	 	character = (prompt('Что искать?', "")),
+// 		count = 0,
+// 		expressionLength = expression.length;
 
-	for (var i = 0; i < expressionLength; i++) {
-		if (expression.charAt(i) === "character")
-			count++;
-	};
+// 	for (var i = 0; i < expressionLength; i++) {
+// 		if (expression.charAt(i) === character)
+// 			count++;
+// 	};
 
-	console.log(count);
+// 	console.log(count);
+// };
+// countChar();
+
+var isEven = function(N) {
+	debugger
+	if (N === 0){
+		return true;
+	} else if (N === 1){
+		return false;
+	} else {
+		return isEven(N-2);
+	}
 };
-countChar();
+
+console.log(isEven(5));
+
+/* Подсчет 
+-------------------------*/
+// var countSize = function (N) {
+// 	if (N === 1){
+// 		return N;
+// 	} else if (N < 0){
+// 		return N;
+// 	} else if (res = N + countSize (N - 1)){
+// 		return res;
+// 	}
+
+// };
+// console.log(countSize(-1));
