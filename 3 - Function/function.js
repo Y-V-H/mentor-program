@@ -46,18 +46,18 @@
 // };
 // countChar();
 
-var isEven = function(N) {
-	debugger
-	if (N === 0){
-		return true;
-	} else if (N === 1){
-		return false;
-	} else {
-		return isEven(N-2);
-	}
-};
+// var isEven = function(N) {
+// 	debugger
+// 	if (N === 0){
+// 		return true;
+// 	} else if (N === 1){
+// 		return false;
+// 	} else {
+// 		return isEven(N-2);
+// 	}
+// };
 
-console.log(isEven(5));
+// console.log(isEven(5));
 
 /* Подсчет 
 -------------------------*/
