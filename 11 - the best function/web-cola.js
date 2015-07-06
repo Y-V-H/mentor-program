@@ -16,6 +16,35 @@ function compareSold(colaA, colaB) {
 		return -1;
 	}
 }
+// console.log(products.sort(compareSold));
+function compareName(colaA, colaB) {
+	if (colaA.name > colaB.name) {
+		return 1;
+	} else if(colaA.name === colaB.name) {
+		return 0;
+	} else {
+		return -1;
+	}
+}
+function compareColories(colaA, colaB) {
+	if (colaA.calories > colaB.calories) {
+		return 1;
+	} else if (colaA.calories === colaB.calories) {
+		return 0;
+	} else {
+		return -1;
+	}
+}
+
+function compareColor(colaA, colaB) {
+	if (colaA.color > colaB.color) {
+		return 1;
+	} else if (colaA.color === colaB.color) {
+		return 0;
+	} else {
+		return -1;
+	}
+}
 
 
 
@@ -28,5 +57,16 @@ function printProduct(products) {
 	}
 }
 
-products.sort(compareSold);
+products.sort(compareName);
+console.log(" Сортируем колу по названию:");
+printProduct(products);
+
+
+products.sort(compareColories);
+console.log(" Сортируем колу по калориям:");
+printProduct(products);
+
+
+products.sort(compareColor);
+console.log(" Сортируем колу по цвету:");
 printProduct(products);
